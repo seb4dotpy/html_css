@@ -1,0 +1,22 @@
+
+/*Element*/
+p {
+    font-family:'Courier New';
+    font-size: 30px;
+    color: rgb(155, 69, 69);
+}
+/*
+    Class
+*/
+.classHtml{
+    font-size: 100px;
+    color:blue;
+}
+/*
+    Id
+*/
+#idHtml {
+    font-size: 75px;
+    font-family: Georgia;
+    color: black;
+}

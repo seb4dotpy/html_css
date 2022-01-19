@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--The standard is index as main page-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="content desscription"> <!--Is important for SEO-->
+        <meta name="robots" content="index,follow"> <!--Atorize robots to positionate the web-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Is used to responsive-->
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Basic structure in HTML</title>
+    </head>
+    <body>
+        <header>
+            <h1>I'm Title</h1>
+            <nav>
+                <ul> <!--ul is used to create lists, unorden list-->  
+                    <a href="#"><li>Navigator</li></a> <!--list item-->
+                </ul>
+                <ol> <!--Orden list-->
+
+                </ol>
+
+            </nav>
+        </header>
+        <main>
+            <section>
+                <article>
+                    
+                </article>                
+            </section>
+                <!--Images types
+                    
+                    - Lossy: Lose quality, but optimize navigator
+                        -> JPG / JPEG
+
+                    - Loseless: No loss format, dont lose quality, more heavy
+                        -> GIF
+                        -> PNG 8 -> 256 colors
+                        -> PNG 24 -> More than 256 colors, very heavy
+                        -> SVG / VECTOR -> Icons (Changing resulutions)
+
+                    How to optimize images.
+
+                    70KB average
+                        -> Tiny PNG (Improve img size)
+                        -> Verexif (Remove metadata)
+                    
+                    the images must be in a separate folder
+                    download images from pexels.com 
+                        -> Download the three bigger images
+                -->
+                <section> <!--Img container-->
+                    <figure>
+                        <img 
+                            src="./images/imgname.extension" 
+                            alt="Decription for rendering and accesibility"
+                        >  
+                        <figcaption>Text of image</figcaption> <!--Is used to explain the image-->  
+                    </figure>
+                </section>
+                <section>
+                    <video controls preload="auto">
+                        <source src="./videoroute.extension">
+                        <source src="./videoroute.differentextension">
+                    </video> <!--Preload is importat to preload xd-->
+                </section>
+            <p>I'm Text</p>
+            <a href="#">I'm a Link</a>
+        </main>
+        <hr>
+        <form action="" id="form"> <!--Action i used to interact with data base, id to javascript-->
+            <label for="name">
+                <span>What is your name?</span>
+                <input type="text" id="name" autocomplete="name" required>
+            </label>
+            <label for="lastName">
+                <span>What is your last name?</span>
+                <input type="text" id="lastName" autocomplete="last-name" required>
+            </label>
+            <label for="date">
+                <span>What is your birthday?</span>
+                <input type="date" id="date" required>
+            </label>
+            <label for="hours">
+                <span>What is your study time?</span>
+                <input type="time" id="hours" required>
+            </label>
+            <label for="pc">
+                <span>What is your postal code</span>
+                <input type="text" id="pc" autocomplete="postal-code"required>
+            </label>
+            <input type="submit">
+        </form><hr><br><br>
+        <form action="" id="calendar">
+            <label for="hour">
+                <span>Hour</span>
+                <input type="time" id="hour" name="hour">
+            </label>
+            <label for="day">
+                <span>Day</span>
+                <input type="date" id="day" name="day">
+            </label>
+            <label for="week">
+                <span>Week</span>
+                <input type="week" id="week" name="week">
+            </label>
+            <label for="month">
+                <span>Month</span>
+                <input type="month" id="month" name="month">
+            </label>
+            <input type="submit">
+        </form><hr><br><br>
+        <form action="" id="calendar-two">
+            <label for="calendar-two">
+                <span>CALENDAR</span>
+                <input type="datetime-local" id="calendar-two" name="calendar-two">
+                <input type="submit">
+            </label>
+        </form><hr><br><br>
+        <form action="">
+            <select name="courses" id=""> <!--Bad practices-->
+                <option value="">JavaScript</option>
+                <option value="">Html5</option>
+                <option value="">Css</option>
+            </select>
+        </form><hr><br><br>
+        <div>
+            <input list="Courses"> <!--Good practices, Mobile-->
+            <datalist id="Courses">
+                <option value="JavaScript"></option>
+                <option value="Html5"></option>
+                <option value="Css3"></option>
+                <option value="Web3"></option>
+            </datalist>
+        </div>
+        <!--Difference beetween Button and Input type submit
+        Button= Have name defined by you, and is most flexible and personalize, its better as "Like" button
+        submit is used to send
+        in input we use, and is better to send form to database
+        <input type="submit" value="name to button">
+        -->
+        <aside>
+
+        </aside>
+        <footer>
+
+        </footer>
+    </body>
+</html>
