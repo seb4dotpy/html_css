@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}   
+.parent {
+    border: 2px black dotted;
+    display: inline-block;
+}
+.box {
+    display: inline-block;
+    background-color:red;
+    width: 100px;
+    height: 100px;
+}
+#two {
+    background-color:green;
+}
+.box:hover{
+    position: relative;
+    bottom: 15px;
+}
+.block-element {/*Display block as default, always  */
+    background-color:green;
+    margin:10px;
+    padding:20px;
+}
+.inline-element .paragraph{ /*Display inline*/
+    background-color:green;
+    margin:10px;
+    padding:20px;
+    display:inline;
+}
+.inline-block-element{/*Display inline-block*/
+    background-color:green;
+    margin:10px;
+    padding:20px;
+    display: inline-block;
+}

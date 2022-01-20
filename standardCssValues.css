@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+/*To use 62.5% as standard with REM*/
+p {
+    font-size: 1.6rem; /*16px with 62.5% in html standard */
+}
