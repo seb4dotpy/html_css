@@ -1,0 +1,9 @@
+
+Media queries: son datos que se aguegan con el pixelaje que se necesita.
+@media (min-width: 480){ <- cuando la pantalla se menor a 480px, va a suceder lo que este dentro
+... code
+}
+esto se agrega en el html con las distintas medidas del proyecto.
+
+BreakPoints: Dimension en el viewport, donde vamos a generar un cambio (Reposicionar y redime
+nsionar los contenedores)
